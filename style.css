@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Oxanium', cursive;
+    }
+
+    body {
+        text-align: center;
+        background: linear-gradient(to bottom, #0088a3, white);
+        min-height: 100vh;
+    }
+
+    main {
+        display: inline-block;
+        margin-top: 1%;
+        padding: 15px;
+        position: relative;
+    }
+
+    .pokedex {
+        width: 100%;
+        max-width: 425px;
+    }
+
+    .pokemon__image {
+        position: absolute;
+        bottom: 55%;
+        left: 40%;
+        transform: translate(-20%, 20%);
+        height: 18%;
+    }
+
+    .pokemon__data {
+        position: absolute;
+        font-weight: 550;
+        color: black;
+        top: 55%;
+        right: 22%;
+        font-size: clamp(8px, 5vw, 25px);
+    }
+
+    .pokemon__name {
+        color: #696969;
+        text-transform: capitalize;
+    }
+
+    .form {
+        position: absolute;
+        background-color: red;
+        width: 65%;
+        top: 63%;
+        left: 17%;
+    }
+
+    .input_search {
+        width: 100%;
+        padding: 2%;
+        outline: none;
+        border: 2px solid #333;
+        border-radius: 5px;
+        font-weight: 600;
+        color: black;
+        font-size: clamp(5px, 2vw, 1rem);
+        box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    }
+
+    .buttons {
+
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        width: 70%;
+        transform: translate(-55%, 0);
+        display: flex;
+        gap: 10px;
+    }
+
+    .button {
+        width: 55%;
+        padding: 2%;
+        border: 3px solid black;
+        border-radius: 10px;
+        font-size: clamp(5px, 2vw, 1rem);
+        font-weight: 600;
+        color: red;
+        background-color: white;
+        box-shadow: -2px 3px 0 black;
+    }
+
+    .button:active {
+        box-shadow: inset -4px 4px 0 black;
+        font-size: 0.9rem;
+    }
+
+    .footer{
+        border-top: 3px solid #0088a3;
+        padding: 25px 0;
+        text-align: center;
+        color: black
+    }
